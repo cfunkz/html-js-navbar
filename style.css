@@ -50,7 +50,7 @@ body {
       background: #002728;
       border-radius: 10px;
       text-decoration: underline;
-      transition: 700ms;
+      transition: 300ms;
     }
 }
 .navbar #login-button{
