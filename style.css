@@ -49,6 +49,8 @@ body {
     &:hover{
       background: #002728;
       border-radius: 10px;
+      text-decoration: underline;
+      transition: 700ms;
     }
 }
 .navbar #login-button{
@@ -62,6 +64,7 @@ body {
     background: #014d4e;
     cursor: pointer;
     color: white;
+    font-weight: bold;
     &:hover{
       background: #002728;
       transform: translateY(-3px);
