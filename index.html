@@ -1,0 +1,111 @@
+
+<html>
+<head>
+    <title>Login/Register with Submenu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo"><a href="#">LOGONAME</a></div>
+      <nav class="navbar">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a>
+              <ul class="submenu">
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a>
+              <ul class="submenu">
+                <li><a href="#">E-Mail</a></li>
+                <li><a href="#">Discord</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </li>
+            <button id="login-button" type="button" name="login-button" onclick="showForms()">SIGN IN</button>
+          </ul>
+      </nav>
+    </div>
+    <div class="main-container">
+      <form id="register-form" class="entry-form" method="post">
+        <div class="close-button" onclick="closeForms()">X</div>
+          <div class="label-container">
+            <div id="tg-button"></div>
+            <button class="login-label" type="button" onclick="showForm('login-form')">LOG IN</button>
+            <button class="signup-label" type="button" onclick="showForm('register-form')">SIGN UP</button>
+          </div>
+          <div class="label-text">REGISTER</div>
+          <div class="entry-container">
+              <input class="entry-field" type="username" placeholder="Username">
+              <input class="entry-field" type="email" placeholder="E-Mail">
+              <input class="entry-field" type="password" placeholder="Password">
+              <div class="tnc-check">
+                <input type="checkbox">I accept <a href="#">Terms</a> & <a href="#">Conditions</a>
+              </div>
+              <button id="submit-register" class="register-button" type="submit">REGISTER</button>
+          </div>
+      </form>
+      <form id="login-form" class="entry-form" method="get">
+        <div class="close-button" onclick="closeForms()">X</div>
+          <div class="label-container">
+            <div id="tg-button"></div>
+            <button class="login-label" type="button" onclick="showForm('login-form')">LOG IN</button>
+            <button class="signup-label" type="button" onclick="showForm('register-form')">SIGN UP</button>
+          </div>
+          <div class="label-text">LOG INTO ACCOUNT</div>
+          <div class="entry-container">
+              <input class="entry-field" type="email" placeholder="E-Mail">
+              <input class="entry-field" type="password" placeholder="Password">
+              <div class="password-check">
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button id="submit-login" class="login-button" type="submit">LOG IN</button>
+          </div>
+          <div class="social-login">
+            <button class="google-button" type="button" name="google-button" method="get"><ion-icon name="logo-google"></ion-icon></button>
+            <button class="facebook-button" type="button" name="facebook-button" method="get"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="discord-button" type="button" name="discord-button" method="get"><ion-icon name="logo-discord"></ion-icon></button>
+          </div>
+      </form>
+    </div>
+
+    <script>
+      var loginForm = document.getElementById("login-form");
+      var registerForm = document.getElementById("register-form");
+      function showForm(formId) {
+          if (formId === "login-form") {
+              loginForm.style.display = "block";
+              registerForm.style.display = "none";
+          } else if (formId === "register-form") {
+              loginForm.style.display = "none";
+              registerForm.style.display = "block";
+          }
+      }
+    </script>
+    <script>
+        var loginForm = document.getElementById("login-form");
+        var registerForm = document.getElementById("register-form");
+
+        function showForms() {
+            loginForm.style.display = "block";
+            registerForm.style.display = "block";
+        }
+    </script>
+    <script>
+        var loginForm = document.getElementById("login-form");
+        var registerForm = document.getElementById("register-form");
+
+        function closeForms() {
+            loginForm.style.display = "none";
+            registerForm.style.display = "none";
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
