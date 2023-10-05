@@ -1,6 +1,6 @@
 body {
     font-family: arial, sans-serif;
-    background-image: url('teal.jpg'); /* Set your desired background color for the entire page */
+    background: #014d4e; /* Set your desired background color for the entire page */
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -89,8 +89,8 @@ body {
 /*Main Container Start*/
 .main-container {
     position: absolute;
-    width: 95%;
-    height: 85%;
+    width: 97%;
+    height: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -228,7 +228,7 @@ body {
     font-weight: bold;
     color: white;
     padding: 5px 10px;
-    top: 5px;
-    right: 5px;
+    top: 0px;
+    right: 0px;
     cursor: pointer;
 }
