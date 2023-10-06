@@ -125,7 +125,7 @@ body {
       cursor: pointer;
       color: white;
       font-weight: bold;
-      font-size: 25px;
+      font-size: 20px;
     }
     & button:hover{
       background: #002728;
